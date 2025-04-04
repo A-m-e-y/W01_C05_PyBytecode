@@ -1,0 +1,124 @@
+  0           0 RESUME                   0
+
+  1           2 LOAD_CONST               0 (0)
+              4 LOAD_CONST               1 (None)
+              6 IMPORT_NAME              0 (numpy)
+              8 STORE_NAME               1 (np)
+
+  3          10 LOAD_CONST               2 (<code object matrix_multiply_numpy at 0x0000014A72520140, file ".\matrixMul.py", line 3>)
+             12 MAKE_FUNCTION            0
+             14 STORE_NAME               2 (matrix_multiply_numpy)
+
+ 16          16 LOAD_NAME                3 (__name__)
+             18 LOAD_CONST               3 ('__main__')
+             20 COMPARE_OP               2 (==)
+             26 POP_JUMP_FORWARD_IF_FALSE   112 (to 252)
+
+ 18          28 BUILD_LIST               0
+             30 LOAD_CONST               4 ((1, 2, 3))
+             32 LIST_EXTEND              1
+             34 BUILD_LIST               0
+             36 LOAD_CONST               5 ((4, 5, 6))
+             38 LIST_EXTEND              1
+             40 BUILD_LIST               2
+             42 STORE_NAME               4 (matrix_c)
+
+ 19          44 LOAD_CONST               6 (7)
+             46 LOAD_CONST               7 (8)
+             48 BUILD_LIST               2
+             50 LOAD_CONST               8 (9)
+             52 LOAD_CONST               9 (10)
+             54 BUILD_LIST               2
+             56 LOAD_CONST              10 (11)
+             58 LOAD_CONST              11 (12)
+             60 BUILD_LIST               2
+             62 BUILD_LIST               3
+             64 STORE_NAME               5 (matrix_d)
+
+ 21          66 PUSH_NULL
+             68 LOAD_NAME                2 (matrix_multiply_numpy)
+             70 LOAD_NAME                4 (matrix_c)
+             72 LOAD_NAME                5 (matrix_d)
+             74 PRECALL                  2
+             78 CALL                     2
+             88 STORE_NAME               6 (result_matrix_numpy)
+
+ 23          90 PUSH_NULL
+             92 LOAD_NAME                7 (print)
+             94 LOAD_CONST              12 ('Input Matrix 1: ')
+             96 PRECALL                  1
+            100 CALL                     1
+            110 POP_TOP
+
+ 24         112 LOAD_NAME                4 (matrix_c)
+            114 GET_ITER
+        >>  116 FOR_ITER                13 (to 144)
+            118 STORE_NAME               8 (row)
+
+ 25         120 PUSH_NULL
+            122 LOAD_NAME                7 (print)
+            124 LOAD_NAME                8 (row)
+            126 PRECALL                  1
+            130 CALL                     1
+            140 POP_TOP
+            142 JUMP_BACKWARD           14 (to 116)
+
+ 26     >>  144 PUSH_NULL
+            146 LOAD_NAME                7 (print)
+            148 LOAD_CONST              13 ('Input Matrix 2: ')
+            150 PRECALL                  1
+            154 CALL                     1
+            164 POP_TOP
+
+ 27         166 LOAD_NAME                5 (matrix_d)
+            168 GET_ITER
+        >>  170 FOR_ITER                13 (to 198)
+            172 STORE_NAME               8 (row)
+
+ 28         174 PUSH_NULL
+            176 LOAD_NAME                7 (print)
+            178 LOAD_NAME                8 (row)
+            180 PRECALL                  1
+            184 CALL                     1
+            194 POP_TOP
+            196 JUMP_BACKWARD           14 (to 170)
+
+ 29     >>  198 PUSH_NULL
+            200 LOAD_NAME                7 (print)
+            202 LOAD_CONST              14 ('Resultant Matrix using numpy:')
+            204 PRECALL                  1
+            208 CALL                     1
+            218 POP_TOP
+
+ 30         220 LOAD_NAME                6 (result_matrix_numpy)
+            222 GET_ITER
+        >>  224 FOR_ITER                15 (to 256)
+            226 STORE_NAME               8 (row)
+
+ 31         228 PUSH_NULL
+            230 LOAD_NAME                7 (print)
+            232 LOAD_NAME                8 (row)
+            234 PRECALL                  1
+            238 CALL                     1
+            248 POP_TOP
+            250 JUMP_BACKWARD           14 (to 224)
+
+ 16     >>  252 LOAD_CONST               1 (None)
+            254 RETURN_VALUE
+
+ 30     >>  256 LOAD_CONST               1 (None)
+            258 RETURN_VALUE
+
+Disassembly of <code object matrix_multiply_numpy at 0x0000014A72520140, file ".\matrixMul.py", line 3>:
+  3           0 RESUME                   0
+
+ 14           2 LOAD_GLOBAL              1 (NULL + np)
+             14 LOAD_ATTR                1 (dot)
+             24 LOAD_FAST                0 (matrix1)
+             26 LOAD_FAST                1 (matrix2)
+             28 PRECALL                  2
+             32 CALL                     2
+             42 LOAD_METHOD              2 (tolist)
+             64 PRECALL                  0
+             68 CALL                     0
+             78 RETURN_VALUE
