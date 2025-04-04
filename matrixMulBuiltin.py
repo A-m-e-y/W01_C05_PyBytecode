@@ -18,18 +18,19 @@ def matrix_multiply_builtin(matrix1, matrix2):
     return result
 
 if __name__ == '__main__':
-    # Example usage with built-in functionality
-    matrix_a = [[1, 2, 3], [4, 5, 6]]
-    matrix_b = [[7, 8], [9, 10], [11, 12]]
-    
+    # Example usage with larger matrices for increased computation time
+    matrix_a = [[i + j * 1000 for i in range(200)] for j in range(200)]
+    matrix_b = [[i + j * 1000 for i in range(200)] for j in range(200)]
+
     result_matrix_builtin = matrix_multiply_builtin(matrix_a, matrix_b)
     
-    print("Input Matrix 1: ")
-    for row in matrix_a:
-        print(row)
-    print("Input Matrix 2: ")
-    for row in matrix_b:
-        print(row)
-    print("Resultant Matrix using built-in functionality:")
-    for row in result_matrix_builtin:
-        print(row)
+    # print("Input Matrix 1: ")
+    # for row in matrix_a:
+    #     print(row)
+    # print("Input Matrix 2: ")
+    # for row in matrix_b:
+    #     print(row)
+    # print("Resultant Matrix using built-in functionality:")
+    # for row in result_matrix_builtin:
+    #     print(row)
+    print("Matrix multiplication using built-in functionality completed successfully.")

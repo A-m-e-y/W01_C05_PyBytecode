@@ -15,17 +15,18 @@ def matrix_multiply_numpy(matrix1, matrix2):
 
 if __name__ == '__main__':
   #Example usage with numpy.
-  matrix_c = [[1, 2, 3], [4, 5, 6]]
-  matrix_d = [[7, 8], [9, 10], [11, 12]]
+  matrix_a = [[i + j * 1000 for i in range(200)] for j in range(200)]
+  matrix_b = [[i + j * 1000 for i in range(200)] for j in range(200)]
+
+  result_matrix_numpy = matrix_multiply_numpy(matrix_a, matrix_b)
   
-  result_matrix_numpy = matrix_multiply_numpy(matrix_c, matrix_d)
-  
-  print("Input Matrix 1: ")
-  for row in matrix_c:
-    print(row)
-  print("Input Matrix 2: ")
-  for row in matrix_d:
-    print(row)
-  print("Resultant Matrix using numpy:")
-  for row in result_matrix_numpy:
-    print(row)
+ #  print("Input Matrix 1: ")
+ #  for row in matrix_a:
+ #    print(row)
+ #  print("Input Matrix 2: ")
+ #  for row in matrix_b:
+ #    print(row)
+ #  print("Resultant Matrix using numpy:")
+ #  for row in result_matrix_numpy:
+ #    print(row)
+  print("Matrix multiplication using NumPy completed successfully.")

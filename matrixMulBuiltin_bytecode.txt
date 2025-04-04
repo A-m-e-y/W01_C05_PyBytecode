@@ -1,110 +1,59 @@
   0           0 RESUME                   0
 
-  1           2 LOAD_CONST               0 (<code object matrix_multiply_builtin at 0x00000283DE6217D0, file ".\matrixMulBuiltin.py", line 1>)
+  1           2 LOAD_CONST               0 (<code object matrix_multiply_builtin at 0x000002070BCB17D0, file ".\matrixMulBuiltin.py", line 1>)
               4 MAKE_FUNCTION            0
               6 STORE_NAME               0 (matrix_multiply_builtin)
 
  20           8 LOAD_NAME                1 (__name__)
              10 LOAD_CONST               1 ('__main__')
              12 COMPARE_OP               2 (==)
-             18 POP_JUMP_FORWARD_IF_FALSE   112 (to 244)
+             18 POP_JUMP_FORWARD_IF_FALSE    67 (to 154)
 
- 22          20 BUILD_LIST               0
-             22 LOAD_CONST               2 ((1, 2, 3))
-             24 LIST_EXTEND              1
-             26 BUILD_LIST               0
-             28 LOAD_CONST               3 ((4, 5, 6))
-             30 LIST_EXTEND              1
-             32 BUILD_LIST               2
-             34 STORE_NAME               2 (matrix_a)
+ 22          20 LOAD_CONST               2 (<code object <listcomp> at 0x000002070BEC5A30, file ".\matrixMulBuiltin.py", line 22>)
+             22 MAKE_FUNCTION            0
+             24 PUSH_NULL
+             26 LOAD_NAME                2 (range)
+             28 LOAD_CONST               3 (200)
+             30 PRECALL                  1
+             34 CALL                     1
+             44 GET_ITER
+             46 PRECALL                  0
+             50 CALL                     0
+             60 STORE_NAME               3 (matrix_a)
 
- 23          36 LOAD_CONST               4 (7)
-             38 LOAD_CONST               5 (8)
-             40 BUILD_LIST               2
-             42 LOAD_CONST               6 (9)
-             44 LOAD_CONST               7 (10)
-             46 BUILD_LIST               2
-             48 LOAD_CONST               8 (11)
-             50 LOAD_CONST               9 (12)
-             52 BUILD_LIST               2
-             54 BUILD_LIST               3
-             56 STORE_NAME               3 (matrix_b)
+ 23          62 LOAD_CONST               4 (<code object <listcomp> at 0x000002070BEC6130, file ".\matrixMulBuiltin.py", line 23>)
+             64 MAKE_FUNCTION            0
+             66 PUSH_NULL
+             68 LOAD_NAME                2 (range)
+             70 LOAD_CONST               3 (200)
+             72 PRECALL                  1
+             76 CALL                     1
+             86 GET_ITER
+             88 PRECALL                  0
+             92 CALL                     0
+            102 STORE_NAME               4 (matrix_b)
 
- 25          58 PUSH_NULL
-             60 LOAD_NAME                0 (matrix_multiply_builtin)
-             62 LOAD_NAME                2 (matrix_a)
-             64 LOAD_NAME                3 (matrix_b)
-             66 PRECALL                  2
-             70 CALL                     2
-             80 STORE_NAME               4 (result_matrix_builtin)
+ 25         104 PUSH_NULL
+            106 LOAD_NAME                0 (matrix_multiply_builtin)
+            108 LOAD_NAME                3 (matrix_a)
+            110 LOAD_NAME                4 (matrix_b)
+            112 PRECALL                  2
+            116 CALL                     2
+            126 STORE_NAME               5 (result_matrix_builtin)
 
- 27          82 PUSH_NULL
-             84 LOAD_NAME                5 (print)
-             86 LOAD_CONST              10 ('Input Matrix 1: ')
-             88 PRECALL                  1
-             92 CALL                     1
-            102 POP_TOP
+ 36         128 PUSH_NULL
+            130 LOAD_NAME                6 (print)
+            132 LOAD_CONST               5 ('Matrix multiplication using built-in functionality completed successfully.')
+            134 PRECALL                  1
+            138 CALL                     1
+            148 POP_TOP
+            150 LOAD_CONST               6 (None)
+            152 RETURN_VALUE
 
- 28         104 LOAD_NAME                2 (matrix_a)
-            106 GET_ITER
-        >>  108 FOR_ITER                13 (to 136)
-            110 STORE_NAME               6 (row)
+ 20     >>  154 LOAD_CONST               6 (None)
+            156 RETURN_VALUE
 
- 29         112 PUSH_NULL
-            114 LOAD_NAME                5 (print)
-            116 LOAD_NAME                6 (row)
-            118 PRECALL                  1
-            122 CALL                     1
-            132 POP_TOP
-            134 JUMP_BACKWARD           14 (to 108)
-
- 30     >>  136 PUSH_NULL
-            138 LOAD_NAME                5 (print)
-            140 LOAD_CONST              11 ('Input Matrix 2: ')
-            142 PRECALL                  1
-            146 CALL                     1
-            156 POP_TOP
-
- 31         158 LOAD_NAME                3 (matrix_b)
-            160 GET_ITER
-        >>  162 FOR_ITER                13 (to 190)
-            164 STORE_NAME               6 (row)
-
- 32         166 PUSH_NULL
-            168 LOAD_NAME                5 (print)
-            170 LOAD_NAME                6 (row)
-            172 PRECALL                  1
-            176 CALL                     1
-            186 POP_TOP
-            188 JUMP_BACKWARD           14 (to 162)
-
- 33     >>  190 PUSH_NULL
-            192 LOAD_NAME                5 (print)
-            194 LOAD_CONST              12 ('Resultant Matrix using built-in functionality:')
-            196 PRECALL                  1
-            200 CALL                     1
-            210 POP_TOP
-
- 34         212 LOAD_NAME                4 (result_matrix_builtin)
-            214 GET_ITER
-        >>  216 FOR_ITER                15 (to 248)
-            218 STORE_NAME               6 (row)
-
- 35         220 PUSH_NULL
-            222 LOAD_NAME                5 (print)
-            224 LOAD_NAME                6 (row)
-            226 PRECALL                  1
-            230 CALL                     1
-            240 POP_TOP
-            242 JUMP_BACKWARD           14 (to 216)
-
- 20     >>  244 LOAD_CONST              13 (None)
-            246 RETURN_VALUE
-
- 34     >>  248 LOAD_CONST              13 (None)
-            250 RETURN_VALUE
-
-Disassembly of <code object matrix_multiply_builtin at 0x00000283DE6217D0, file ".\matrixMulBuiltin.py", line 1>:
+Disassembly of <code object matrix_multiply_builtin at 0x000002070BCB17D0, file ".\matrixMulBuiltin.py", line 1>:
               0 MAKE_CELL                1 (matrix2)
 
   1           2 RESUME                   0
@@ -130,7 +79,7 @@ Disassembly of <code object matrix_multiply_builtin at 0x00000283DE6217D0, file 
 
  17     >>  110 LOAD_CLOSURE             1 (matrix2)
             112 BUILD_TUPLE              1
-            114 LOAD_CONST               3 (<code object <listcomp> at 0x00000283DE8A5930, file ".\matrixMulBuiltin.py", line 17>)
+            114 LOAD_CONST               3 (<code object <listcomp> at 0x000002070BEC5930, file ".\matrixMulBuiltin.py", line 17>)
             116 MAKE_FUNCTION            8 (closure)
             118 LOAD_FAST                0 (matrix1)
             120 GET_ITER
@@ -141,7 +90,7 @@ Disassembly of <code object matrix_multiply_builtin at 0x00000283DE6217D0, file 
  18         138 LOAD_FAST                2 (result)
             140 RETURN_VALUE
 
-Disassembly of <code object <listcomp> at 0x00000283DE8A5930, file ".\matrixMulBuiltin.py", line 17>:
+Disassembly of <code object <listcomp> at 0x000002070BEC5930, file ".\matrixMulBuiltin.py", line 17>:
               0 COPY_FREE_VARS           1
               2 MAKE_CELL                1 (row)
 
@@ -152,7 +101,7 @@ Disassembly of <code object <listcomp> at 0x00000283DE8A5930, file ".\matrixMulB
              12 STORE_DEREF              1 (row)
              14 LOAD_CLOSURE             1 (row)
              16 BUILD_TUPLE              1
-             18 LOAD_CONST               0 (<code object <listcomp> at 0x00000283DE8C5470, file ".\matrixMulBuiltin.py", line 17>)
+             18 LOAD_CONST               0 (<code object <listcomp> at 0x000002070BEE5590, file ".\matrixMulBuiltin.py", line 17>)
              20 MAKE_FUNCTION            8 (closure)
              22 LOAD_GLOBAL              1 (NULL + zip)
              34 LOAD_DEREF               2 (matrix2)
@@ -164,7 +113,7 @@ Disassembly of <code object <listcomp> at 0x00000283DE8A5930, file ".\matrixMulB
              56 JUMP_BACKWARD           24 (to 10)
         >>   58 RETURN_VALUE
 
-Disassembly of <code object <listcomp> at 0x00000283DE8C5470, file ".\matrixMulBuiltin.py", line 17>:
+Disassembly of <code object <listcomp> at 0x000002070BEE5590, file ".\matrixMulBuiltin.py", line 17>:
               0 COPY_FREE_VARS           1
 
  17           2 RESUME                   0
@@ -173,7 +122,7 @@ Disassembly of <code object <listcomp> at 0x00000283DE8C5470, file ".\matrixMulB
         >>    8 FOR_ITER                41 (to 92)
              10 STORE_FAST               1 (col)
              12 LOAD_GLOBAL              1 (NULL + sum)
-             24 LOAD_CONST               0 (<code object <genexpr> at 0x00000283DE841D10, file ".\matrixMulBuiltin.py", line 17>)
+             24 LOAD_CONST               0 (<code object <genexpr> at 0x000002070BE61D10, file ".\matrixMulBuiltin.py", line 17>)
              26 MAKE_FUNCTION            0
              28 LOAD_GLOBAL              3 (NULL + zip)
              40 LOAD_DEREF               2 (row)
@@ -189,7 +138,7 @@ Disassembly of <code object <listcomp> at 0x00000283DE8C5470, file ".\matrixMulB
              90 JUMP_BACKWARD           42 (to 8)
         >>   92 RETURN_VALUE
 
-Disassembly of <code object <genexpr> at 0x00000283DE841D10, file ".\matrixMulBuiltin.py", line 17>:
+Disassembly of <code object <genexpr> at 0x000002070BE61D10, file ".\matrixMulBuiltin.py", line 17>:
  17           0 RETURN_GENERATOR
               2 POP_TOP
               4 RESUME                   0
@@ -207,3 +156,83 @@ Disassembly of <code object <genexpr> at 0x00000283DE841D10, file ".\matrixMulBu
              32 JUMP_BACKWARD           13 (to 8)
         >>   34 LOAD_CONST               0 (None)
              36 RETURN_VALUE
+
+Disassembly of <code object <listcomp> at 0x000002070BEC5A30, file ".\matrixMulBuiltin.py", line 22>:
+              0 MAKE_CELL                1 (j)
+
+ 22           2 RESUME                   0
+              4 BUILD_LIST               0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                29 (to 68)
+             10 STORE_DEREF              1 (j)
+             12 LOAD_CLOSURE             1 (j)
+             14 BUILD_TUPLE              1
+             16 LOAD_CONST               0 (<code object <listcomp> at 0x000002070BE61C30, file ".\matrixMulBuiltin.py", line 22>)
+             18 MAKE_FUNCTION            8 (closure)
+             20 LOAD_GLOBAL              1 (NULL + range)
+             32 LOAD_CONST               1 (200)
+             34 PRECALL                  1
+             38 CALL                     1
+             48 GET_ITER
+             50 PRECALL                  0
+             54 CALL                     0
+             64 LIST_APPEND              2
+             66 JUMP_BACKWARD           30 (to 8)
+        >>   68 RETURN_VALUE
+
+Disassembly of <code object <listcomp> at 0x000002070BE61C30, file ".\matrixMulBuiltin.py", line 22>:
+              0 COPY_FREE_VARS           1
+
+ 22           2 RESUME                   0
+              4 BUILD_LIST               0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                10 (to 30)
+             10 STORE_FAST               1 (i)
+             12 LOAD_FAST                1 (i)
+             14 LOAD_DEREF               2 (j)
+             16 LOAD_CONST               0 (1000)
+             18 BINARY_OP                5 (*)
+             22 BINARY_OP                0 (+)
+             26 LIST_APPEND              2
+             28 JUMP_BACKWARD           11 (to 8)
+        >>   30 RETURN_VALUE
+
+Disassembly of <code object <listcomp> at 0x000002070BEC6130, file ".\matrixMulBuiltin.py", line 23>:
+              0 MAKE_CELL                1 (j)
+
+ 23           2 RESUME                   0
+              4 BUILD_LIST               0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                29 (to 68)
+             10 STORE_DEREF              1 (j)
+             12 LOAD_CLOSURE             1 (j)
+             14 BUILD_TUPLE              1
+             16 LOAD_CONST               0 (<code object <listcomp> at 0x000002070BE62E90, file ".\matrixMulBuiltin.py", line 23>)
+             18 MAKE_FUNCTION            8 (closure)
+             20 LOAD_GLOBAL              1 (NULL + range)
+             32 LOAD_CONST               1 (200)
+             34 PRECALL                  1
+             38 CALL                     1
+             48 GET_ITER
+             50 PRECALL                  0
+             54 CALL                     0
+             64 LIST_APPEND              2
+             66 JUMP_BACKWARD           30 (to 8)
+        >>   68 RETURN_VALUE
+
+Disassembly of <code object <listcomp> at 0x000002070BE62E90, file ".\matrixMulBuiltin.py", line 23>:
+              0 COPY_FREE_VARS           1
+
+ 23           2 RESUME                   0
+              4 BUILD_LIST               0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                10 (to 30)
+             10 STORE_FAST               1 (i)
+             12 LOAD_FAST                1 (i)
+             14 LOAD_DEREF               2 (j)
+             16 LOAD_CONST               0 (1000)
+             18 BINARY_OP                5 (*)
+             22 BINARY_OP                0 (+)
+             26 LIST_APPEND              2
+             28 JUMP_BACKWARD           11 (to 8)
+        >>   30 RETURN_VALUE
